@@ -1,0 +1,40 @@
+the key differences between these two to finalize everything that we've talked about.
+1. Functional programming is all about performing many different operation for which the data is fixed.
+    vs
+    Object oriented programming.Is about a few operations.On Common Data.
+
+2.  In a functional program, we have the idea of stateless, that is we don't modify state state is immutable
+    vs 
+    an object oriented programming that is very stateful.
+    We are modifying state.
+    A feature of objects is that an object procedures can access and often modify the data fields of the
+    object, 
+
+
+3.  In functional programming.Our functions are pure, there are no side effects.
+    It means that the functions that we write don't make an impact on the code that is running outside of
+    that function.
+    vs
+    On object oriented programming.There are definitely side effects.Methods manipulate our internal state.
+
+4.  Function Programming is Declarative(It's about what we want to be doing) 
+    vs 
+    OOP is imperative(more about how we want it to be done)
+ 
+the interesting thing and why functional programming is becoming popular is because of this idea
+of purity, because of this with the functions that have no side effects, it means that we can start
+running code in parallel on multiple processors and it won't have effect on our program versus an object
+oriented programming where we can do that because our functions have side effects with functional programming,
+
+
+So when should you use one over the other?
+
+Well, functional programming is quite good at processing large data for applications.
+If you're analyzing data, user data, maybe using it for a machine learning model.
+Functional programming works really well for high performance and processors, for example, because
+you can run it on multiple processors.
+If you have few things that require a lot of operations, a lot of little functions apply to it, well,
+then functional programming is usually a good idea.
+
+If, on the other hand, you have many things like characters in a game with not too many operations,
+with few operations, wooden object oriented programming might be a better solution.

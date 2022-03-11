@@ -1,0 +1,37 @@
+3- side effects and impure functions conclusion
+
+side effects and impurity is not necessarily bad.
+But the goal is to organize your code in a way so that you isolate these side effects, these database
+calls, API calls, input output to a certain location in your program, in your code, so that your
+code becomes predictable and easier to bug, because at the end of the day, we do have to have some
+sort of a global state to describe our application.
+
+That's unavoidable.
+
+This is just the tip of the iceberg.
+
+When it comes to terminology and functional programming, it gets really complicated and there's some
+really large words like referential transparency.
+But as I said before, at its core, the essence of functional programming is very simple.
+We want to build programs that are built with a bunch of very small, very reuseable, predictable,
+pure functions.
+
+How do we build the perfect function, we're going to explore that over the next couple of videos,
+but this is a quick reference.
+
+1- A perfect function should do one task and one task only.
+We don't want a massive function, a simple function that we can test that does one thing really well.
+
+2- That function should have a return statement.
+Every function should return something from it, because when we give it an input, we expect an output.
+
+3- Every function should be pure
+4- And that also means having no shared state with other functions and
+5- immutable state where we can modify some of the state within our functions.
+But we always return whatever we get, such as an input.
+We always return a new copy of that output.
+
+We never just modify our global state.
+6- Functions are also going to be composable 
+7- And most importantly, we want to make functions predictable.
+Functional programming at the end of the day is just about making your code predictable.

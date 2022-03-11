@@ -1,0 +1,33 @@
+14 - Is FP The Answer To Everything?
+
+the idea with functional programming is this idea of separation of
+data and functions or data and the effects that happen on that data.
+Kind of like this pipe.
+
+We have a piece of data that we put through this pipe and whatever happens through the pipe, these
+transformation, something gets outputted if you try to perform effects and logic at the same time,
+the problem is that you may create hidden side effects, which cause a lot of bugs if multiple things
+in your program handle some piece of data at the same time, well, that gets really complicated and
+
+it could cause many problems.
+
+So the idea in functional programming of keeping functions small and pure and composable doing one thing
+at a time and doing it well, this idea of immutability, the idea that function that take inputs and
+return outputs so that it can be used with other functions, it allows us to have a predictable program
+where it minimizes bugs because everything is so simple.
+
+And as long as we are able to combine these small little functions together, we're able to create really
+complex programs, these small little pieces that eventually build something like a pyramid, something\
+great.
+
+It doesn't mean that functional programming is the answer to everything.
+Yes, because of its nature, it works really well with distributed systems that have different little
+machines all over the world working with each other or parallelism where multiple things have to happen
+in parallel.
+
+But because these functions are pure, it doesn't cause strange bugs.
+But at the same time, it all depends on the problem you have.
+There are times when object oriented programming might be better.
+You're building a fairy tale game and you have clear objects, characters in the game that have some
+sort of state and that can interact with their state and others can interact with them as well.
+Or you have something like an Amazon shopping cart where there's a clear data that needs to get processed.
