@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>helo</h1>
+    <!-- I have applied the ex1 script along here -->
+    <!-- <script src="ex1.js"></script> -->
+    <script type="module" src="es6module.js"></script> 
+    <!-- here I have overwritten the fight func with fight var  -->
+    <script>
+    var fight = 'gfgf'
+    </script>
+    <!-- so if we place the below script above we can have
+    fight func so this is the problem without modules
+    -->
+    <!-- this script will give error so 
+    Well, actually, two other tricks to make this work.
+    One is that you now have to define this script as a type module.
+    Any time we use import and export, we have to tell it, hey, this is a module.
+
+    so here after this we need to load the assets in live server so after that we need to specify 
+    reference specifier './' ,'../' etc
+    -->
+    <script type="module">
+        import {fight} from './es6module.js';
+        console.log(fight('ron','hedwig'))
+    </script>
+</body>
+</html>
